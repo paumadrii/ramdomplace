@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+    <title>RP</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>RAMDOM PLACE</h1>
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+
+    </header>
+    <div id="container">
+        <div id="player" class="content">
+            <form action="" id="player-form" class="main">
+                <div class="form">
+                    <label for="name">Name</label>
+                    <input class="input" id="name" type="text" placeholder="Enter Name">
+                </div>
+                <div class="form">
+                    <label for="age">Age</label>
+                    <input class="input" id="age" type="text" placeholder="Enter Age">
+                </div>
+                <div class="form">
+                    <label for="address">Address</label>
+                    <input class="input" id="address" type="text" placeholder="Enter address">
+                </div>
+                <div class="form">
+                    <label for="music">Music</label>
+                    <select class="input" id="music" type='text' placeholder="Type of Music">
+                        <option value="latino">Latino</option>
+                        <option value="techno">Techno</option>
+                        <option value="Reggaeton">Reggaeton</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="Rock">Rock</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="price">Price</label>
+                    <input class="input" id="price" type="text" placeholder="Enter price">
+                </div>
+                <div class="submit">
+                    <input class="btn btn-success add-btn" type="submit" value="submit">
+                </div>
+            </form>
+            <div class="form">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="name-list">
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <button  class="btn delete" id="delete">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div id="share">
+                <button class="btn sh">Share</button>
+            </div>
+        </div>
+       
+        <div id="map"></div>
+    </div>
+    <div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+
+</body>
+
+</html>
